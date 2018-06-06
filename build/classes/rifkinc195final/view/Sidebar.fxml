@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rifkinc195final.view.SidebarController">
+   <left>
+      <Pane prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #444;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="51.0" layoutX="65.0" layoutY="21.0" stroke="#4d4d4d" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
+            <Text layoutX="65.0" layoutY="58.0" strokeDashOffset="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P" textAlignment="CENTER" wrappingWidth="50.00000149011612">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="36.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#1f93ff" offset="0.4261168384879725" />
+                        <Stop color="#1f96ff" offset="0.436426116838488" />
+                        <Stop color="WHITE" offset="0.44329896907216493" />
+                        <Stop color="#1f96ff" offset="0.4467353951890034" />
+                        <Stop color="WHITE" offset="0.4467353951890034" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Button fx:id="sidebarAppointmentsBtn" layoutX="20.0" layoutY="109.0" mnemonicParsing="false" onAction="#sidebarAppointmentsBtnHandler" prefHeight="50.0" prefWidth="141.0" text="Appointments" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="sidebarCustomersBtn" layoutX="20.0" layoutY="211.0" mnemonicParsing="false" onAction="#sidebarCustomersBtnHandler" prefHeight="50.0" prefWidth="141.0" text="Customers" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="sidebarReportsBtn" layoutX="20.0" layoutY="315.0" mnemonicParsing="false" onAction="#sidebarReportsBtnHandler" prefHeight="50.0" prefWidth="141.0" text="Reports" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Button>
+         </children></Pane>
+   </left>
+</BorderPane>

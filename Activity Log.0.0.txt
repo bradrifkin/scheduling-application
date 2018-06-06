@@ -1,0 +1,56 @@
+May 01, 2018 2:16:13 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 01, 2018 2:16:23 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: user1 logged in
+May 01, 2018 2:35:31 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 01, 2018 2:37:17 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 01, 2018 2:37:28 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: user2 logged in
+May 01, 2018 2:42:19 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: user2 logged in
+May 01, 2018 2:42:53 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 01, 2018 2:44:17 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: wflick logged in
+May 01, 2018 2:47:12 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 02, 2018 12:15:56 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 02, 2018 9:16:57 AM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 02, 2018 12:45:41 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 02, 2018 12:56:13 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 02, 2018 12:58:27 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 02, 2018 1:00:11 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 02, 2018 1:01:00 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 02, 2018 1:03:07 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: user1 logged in
+May 02, 2018 1:06:27 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 02, 2018 1:12:35 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 21, 2018 11:16:11 AM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 21, 2018 11:31:00 AM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 21, 2018 11:45:31 AM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 22, 2018 9:50:58 AM rifkinc195final.view.LoginController signInButtonHandler
+INFO:  logged in
+May 23, 2018 11:47:07 AM rifkinc195final.view.LoginController signInButtonHandler
+INFO:  logged in
+May 23, 2018 1:50:59 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 23, 2018 2:33:42 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 23, 2018 2:44:34 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in
+May 23, 2018 4:04:22 PM rifkinc195final.view.LoginController signInButtonHandler
+INFO: test logged in

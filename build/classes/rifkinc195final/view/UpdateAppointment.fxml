@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rifkinc195final.view.UpdateAppointmentController">
+   <children>
+      <Text layoutX="24.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Appointment">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="24.0" layoutY="62.0" text="Appointment ID">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateAppointmentIDTextField" disable="true" editable="false" layoutX="135.0" layoutY="57.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="96.0" text="Contact">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="updateAppointmentContactComboBox" layoutX="135.0" layoutY="91.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="130.0" text="Customer">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="updateAppointmentCustomerComboBox" layoutX="135.0" layoutY="125.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="166.0" text="Date">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="updateAppointmentDatePicker" layoutX="135.0" layoutY="161.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="200.0" text="Start Time">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="updateAppointmentStartComboBox" layoutX="135.0" layoutY="195.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="233.0" text="End Time">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="updateAppointmentEndComboBox" layoutX="135.0" layoutY="228.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="266.0" text="Type">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="updateAppointmentTypeComboBox" layoutX="135.0" layoutY="261.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="299.0" text="Title">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateAppointmentTitleTextField" layoutX="135.0" layoutY="294.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="332.0" text="Description">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateAppointmentDescriptionTextField" layoutX="135.0" layoutY="327.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="365.0" text="URL">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateAppointmentURLTextField" layoutX="135.0" layoutY="360.0" prefHeight="25.0" prefWidth="256.0" />
+      <Button fx:id="logOffBtn" layoutX="552.0" layoutY="18.0" mnemonicParsing="false" onAction="#logOffBtnHandler" text="Log off">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Button>
+      <ButtonBar layoutX="406.0" layoutY="354.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="updateAppointmentCancelBtn" mnemonicParsing="false" onAction="#updateAppointmentCancelBtnHandler" text="Cancel">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="updateAppointmentSaveBtn" mnemonicParsing="false" onAction="#updateAppointmentSaveBtnHandler" text="Save">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

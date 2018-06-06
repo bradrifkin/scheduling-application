@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rifkinc195final.view.ReportsController">
+   <children>
+      <Text layoutX="24.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="logOffBtn" layoutX="552.0" layoutY="18.0" mnemonicParsing="false" onAction="#logOffBtnHandler" text="Log off">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Button>
+      <TabPane layoutY="62.0" prefHeight="300.0" prefWidth="606.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="ATBMtab" text="Appointment Types by Month">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="reportsATBMTable" layoutX="16.0" layoutY="25.0" prefHeight="230.0" prefWidth="590.0">
+                          <columns>
+                            <TableColumn fx:id="reportsATBMMonthColumn" prefWidth="75.0" text="Month" />
+                            <TableColumn fx:id="reportsATBMTypeColumn" prefWidth="121.0" text="Type" />
+                              <TableColumn fx:id="reportsATBMCountColumn" prefWidth="133.0" text="Count of Type" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab fx:id="ATBCtab" text="Appointment Types by Customer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="239.0" prefWidth="600.0">
+                     <children>
+                        <TableView fx:id="reportsATBCTable" layoutX="16.0" layoutY="25.0" prefHeight="230.0" prefWidth="590.0">
+                           <columns>
+                              <TableColumn fx:id="reportsATBCCustomerColumn" prefWidth="134.0" text="Customer" />
+                              <TableColumn fx:id="reportsATBCTypeColumn" prefWidth="111.0" text="Type" />
+                              <TableColumn fx:id="reportsATBCCountColumn" prefWidth="147.0" text="Count of Type" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="scheduleTab" text="Schedule by Consultant">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="303.0" prefWidth="600.0">
+                     <children>
+                        <Label layoutX="46.0" layoutY="26.0" text="Choose a consultant:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="reportsComboBox" layoutX="204.0" layoutY="23.0" onAction="#reportsComboBoxHandler" prefHeight="25.0" prefWidth="294.0" />
+                        <TableView fx:id="reportsScheduleTable" layoutX="16.0" layoutY="71.0" prefHeight="194.0" prefWidth="590.0">
+                           <columns>
+                              <TableColumn fx:id="reportsScheduleApptColumn" prefWidth="38.0" text="Appt" />
+                              <TableColumn fx:id="reportsScheduleCustomerColumn" prefWidth="114.0" text="Customer" />
+                              <TableColumn fx:id="reportsScheduleStartColumn" prefWidth="104.0" text="Start" />
+                              <TableColumn fx:id="reportsScheduleEndColumn" prefWidth="109.0" text="End" />
+                              <TableColumn fx:id="reportsScheduleTypeColumn" prefWidth="105.0" text="Type" />
+                              <TableColumn fx:id="reportsScheduleTitleColumn" prefWidth="103.0" text="Title" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

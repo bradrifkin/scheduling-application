@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rifkinc195final.view.UpdateCustomerController">
+   <children>
+      <Text layoutX="24.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Customer">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="24.0" layoutY="84.0" text="Customer ID">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateCustomerIDTextField" disable="true" editable="false" layoutX="135.0" layoutY="79.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="118.0" text="Name">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateCustomerNameTextField" layoutX="135.0" layoutY="113.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="154.0" text="Address">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateCustomerAddressTextField" layoutX="135.0" layoutY="149.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="189.0" text="Address (cont.)">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateCustomerAddress2TextField" layoutX="135.0" layoutY="184.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="223.0" text="City">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="updateCustomerCityComboBox" layoutX="135.0" layoutY="218.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="258.0" text="Country">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateCustomerCountryTextField" editable="false" layoutX="135.0" layoutY="253.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="292.0" text="Postal Code">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateCustomerPostalCodeTextField" layoutX="135.0" layoutY="287.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="24.0" layoutY="327.0" text="Phone">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateCustomerPhoneTextField" layoutX="135.0" layoutY="322.0" prefHeight="25.0" prefWidth="256.0" />
+      <Button fx:id="logOffBtn" layoutX="552.0" layoutY="18.0" mnemonicParsing="false" onAction="#logOffBtnHandler" text="Log off">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Button>
+      <ButtonBar layoutX="406.0" layoutY="346.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="updateCustomerCancelBtn" mnemonicParsing="false" onAction="#updateCustomerCancelBtnHandler" text="Cancel">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="updateCustomerSaveBtn" mnemonicParsing="false" onAction="#updateCustomerSaveBtnHandler" text="Save">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

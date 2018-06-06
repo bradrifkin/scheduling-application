@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rifkinc195final.view.MyAppointmentsController">
+   <children>
+      <Text layoutX="24.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Appointments">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="logOffBtn" layoutX="552.0" layoutY="18.0" mnemonicParsing="false" onAction="#logOffBtnHandler" text="Log off">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font></Button>
+      <TableView fx:id="myAppointmentsTable" layoutX="16.0" layoutY="69.0" prefHeight="263.0" prefWidth="590.0">
+        <columns>
+          <TableColumn fx:id="myAppointmentsCustomerColumn" prefWidth="119.0" text="Customer" />
+            <TableColumn fx:id="myAppointmentsStartColumn" prefWidth="112.0" text="Start" />
+            <TableColumn fx:id="myAppointmentsEndColumn" prefWidth="111.0" text="End" />
+            <TableColumn fx:id="myAppointmentsTypeColumn" prefWidth="117.0" text="Type" />
+            <TableColumn fx:id="myAppointmentsTitleColumn" prefWidth="116.0" text="Title" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="16.0" layoutY="337.0" prefHeight="58.0" prefWidth="265.0" style="-fx-border-color: #ccc; -fx-border-radius: 5px;">
+         <children>
+            <RadioButton fx:id="viewUpcomingWeekRadioBtn" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#viewUpcomingWeekRadioBtnHandler" text="View upcoming week">
+               <toggleGroup>
+                  <ToggleGroup fx:id="viewUpcoming" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="viewUpcomingMonthRadioBtn" layoutX="14.0" layoutY="33.0" mnemonicParsing="false" onAction="#viewUpcomingMonthRadioBtnHandler" text="View upcoming month" toggleGroup="$viewUpcoming" />
+            <Button fx:id="myAppointmentsResetButton" layoutX="172.0" layoutY="17.0" mnemonicParsing="false" onAction="#myAppointmentsResetButtonHandler" prefHeight="25.0" prefWidth="75.0" text="Reset" />
+         </children>
+      </AnchorPane>
+      <ButtonBar layoutX="341.0" layoutY="346.0" prefHeight="40.0" prefWidth="265.0">
+        <buttons>
+          <Button fx:id="myAppointmentsAddBtn" mnemonicParsing="false" onAction="#myAppointmentsAddBtnHandler" text="Add" />
+            <Button fx:id="myAppointmentsUpdateBtn" mnemonicParsing="false" onAction="#myAppointmentsUpdateBtnHandler" text="Update" />
+            <Button fx:id="myAppointmentsDeleteBtn" mnemonicParsing="false" onAction="#myAppointmentsDeleteBtnHandler" text="Delete" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rifkinc195final.view.CustomersController">
+   <children>
+      <Text layoutX="24.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="logOffBtn" layoutX="552.0" layoutY="18.0" mnemonicParsing="false" onAction="#logOffBtnHandler" text="Log off">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font></Button>
+      <TableView fx:id="customersTable" layoutX="16.0" layoutY="69.0" prefHeight="263.0" prefWidth="591.0">
+        <columns>
+          <TableColumn fx:id="customersNameColumn" prefWidth="107.0" text="Name" />
+            <TableColumn fx:id="customersAddressColumn" prefWidth="131.0" text="Address" />
+            <TableColumn fx:id="customersCityColumn" prefWidth="85.0" text="City" />
+            <TableColumn fx:id="customersPostalCodeColumn" prefWidth="72.0" text="Postal Code" />
+            <TableColumn fx:id="customersCountryColumn" prefWidth="94.0" text="Country" />
+            <TableColumn fx:id="customersPhoneColumn" prefWidth="87.0" text="Phone" />
+        </columns>
+      </TableView>
+      <ButtonBar layoutX="341.0" layoutY="346.0" prefHeight="40.0" prefWidth="265.0">
+        <buttons>
+          <Button fx:id="customersAddBtn" mnemonicParsing="false" onAction="#customersAddBtnHandler" text="Add" />
+            <Button fx:id="customersUpdateBtn" mnemonicParsing="false" onAction="#customersUpdateBtnHandler" text="Update" />
+            <Button fx:id="customersDeleteBtn" mnemonicParsing="false" onAction="#customersDeleteBtnHandler" text="Delete" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
